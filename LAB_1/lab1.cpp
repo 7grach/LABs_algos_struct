@@ -112,6 +112,7 @@ static void qs_rec(int *a, int lo, int hi)
             int t = a[i]; a[i] = a[j]; a[j] = t;
             i++; j--;
         }
+        
     }
     qs_rec(a, lo, j);
     qs_rec(a, i, hi);
